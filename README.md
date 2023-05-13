@@ -1,14 +1,25 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
-# Project Title
+# Solace Distributed Tracing Demo
 
 ## Overview
-This project is ...
+This project contains the assets and applications needed to run an end to end distributed tracing demo. This repo contains the following:
+
+* `docker-compose.yaml` containing the following:
+  * Docker image of the Solace PubSub+ Event Broker
+  * Docker image of the [OpenTelemetry Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) packaged with a Solace receiver modules
+  * Docker Image for the Jaeger all in one
+* `otel-collector-config.yaml` - configuration file needed for collector
+* `solace_config_keys.env` - env variables for configuring the solace broker
+* `.env `- contains env variables for the docker compose file
+* `src/solace-publisher.jar` - Solace JMS application for publishing of messages
+* `src/solace-queue-receiver.jar` - JMS application for receiving messages from a JMS Queue
+* `src/opentelemetry-javaagent-all-1.19.0.jar` - [OpenTelemetry Java Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation) API to dynamically inject telemetry bytecode
+* `src/solace-opentelemetry-jms-integration-1.0.0.jar` - [Solace PubSub+ OpenTelemetry Integration API for JMS](https://repo1.maven.org/maven2/com/solace/solace-opentelemetry-jms-integration/1.0.0/solace-opentelemetry-jms-integration-1.0.0.jar)
+* `src/jms-auto-instrumentation-sampler-sources.jar` - Source code for the Solace jms application for publishing and receiving messages
 
 ## Getting started quickly
-1. Step 1
-1. Step 2
-1. Step 3
+Follow the steps in this [codelab](https://codelabs.solace.dev/codelabs/dt-otel/index.html) for details
 
 ## Documentation
 Details about the what why and how of this project. Either refer to external documentations or document in this repo
