@@ -17,6 +17,7 @@ This project contains the assets and applications needed to run an end to end di
 * `src/opentelemetry-javaagent-all-1.19.0.jar` - [OpenTelemetry Java Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation) API to dynamically inject telemetry bytecode
 * `src/solace-opentelemetry-jms-integration-1.0.0.jar` - [Solace PubSub+ OpenTelemetry Integration API for JMS](https://repo1.maven.org/maven2/com/solace/solace-opentelemetry-jms-integration/1.0.0/solace-opentelemetry-jms-integration-1.0.0.jar)
 * `src/jms-auto-instrumentation-sampler-sources.jar` - Source code for the Solace jms application for publishing and receiving messages
+* `manual-instrumentation` - Sample applications using manual instrumentation
 
 ## Getting started quickly
 Follow the steps in this [codelab](https://codelabs.solace.dev/codelabs/dt-otel/index.html) for details
