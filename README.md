@@ -22,6 +22,10 @@ This project contains the assets and applications needed to run an end to end di
 ## Getting started quickly
 Follow the steps in this [codelab](https://codelabs.solace.dev/codelabs/dt-otel/index.html) for details
 
+### A note on kubernetes
+If you want to deploy the otel collector on a kubernetes cluster execute the following command from the [k8s](./k8s) directory
+`kubectl apply -f otel-collector-deployment.yaml`
+
 ## Documentation
 Details about the what why and how of this project. Either refer to external documentations or document in this repo
 
